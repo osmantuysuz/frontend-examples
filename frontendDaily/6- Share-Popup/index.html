@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Share-Popup</title>
+</head>
+
+<body>
+    <label for="popup-1" class="popup-toggle-button">
+        <img src="img/paper-plane.png" alt="">
+        Share
+    </label>
+    <input type="checkbox" id="popup-1" class="popup-toggle">
+    <div class="popup">
+        <label for="popup-1" class="popup-close-fixed"></label>
+        <div class="popup-inner share-popup">
+            <label for="popup-1" class="popup-close">
+                <img src="img/close.png" alt="">
+            </label>
+            <h4>Share this design</h4>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/pinterest.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/linkedin.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/tumblr.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <h6>Or copy link</h6>
+            <div class="input">
+                <input type="text" value="github.com/osmantuysuz" id="input-url">
+                <button type="button" onclick="copy('input-url')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert">
+        
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
