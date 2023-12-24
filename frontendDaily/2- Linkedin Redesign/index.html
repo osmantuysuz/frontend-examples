@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkedin Redesign</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Linked</span>
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user-group"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-message"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-bell"></i>
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-grip"></i>
+              <span>Applications</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-menu">
+        <a href="#">
+          <span class="detail">
+            <span class="name">Osman TÜYSÜZ</span>
+            <span class="status online">Online</span>
+          </span>
+          <img src="./img/profilPhoto.jpg" alt="" />
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="sidebar">
+        <div class="widget widget-stats">
+          <div class="stats-user">
+            <div class="cover"></div>
+            <div class="avatar">
+              <img src="./img/profilPhoto.jpg" alt="" />
+            </div>
+            <div class="name">Osman TÜYSÜZ</div>
+            <div class="job-title">Software Developer</div>
+          </div>
+          <ul>
+            <li>
+              <span class="key">Who viewed your profile</span>
+              <span class="value">90</span>
+            </li>
+            <li>
+              <span class="key">Views of your post</span>
+              <span class="value">627</span>
+            </li>
+          </ul>
+        </div>
+        <div class="widget widget-newest">
+          <h6>NEWEST</h6>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-hashtag"></i>money</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-hashtag"></i>economy</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-hashtag"></i>markets</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-hashtag"></i>futurism</a>
+            </li>
+          </ul>
+
+          <h6>
+            GROUP
+            <div class="dropdown">
+              <a href="#">Active <i class="fa fa-chevron-down"></i></a>
+            </div>
+          </h6>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-user-group"></i>Android Developers Group</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user-group"></i>User Interface</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user-group"></i>Prototürk</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user-group"></i>Design Thinking</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="widget widget-button">Add Event <i class="fa fa-plus"></i></a>
+        <a href="#" class="widget widget-button find-more">Find More</a>
+      </div>
+      <div class="content">
+        <div class="create-post">
+          <textarea cols="30" rows="10" placeholder="Create Post"></textarea>
+          <ul class="actions">
+            <li>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="fa-solid fa-camera"></i>
+                Photo
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="file">
+                <i class="fa-solid fa-video"></i>
+                Video
+              </label>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-calendar-days"></i>
+                Event
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-pen-to-square"></i>
+                Write
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="filter-box">
+          <h6>Filter post by:</h6>
+          <label class="selectbox">
+            <select name="" id="">
+              <option value="popular">Popular</option>
+              <option value="newest">Newest</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+          </label>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="./img/profilPhoto.jpg" alt="" />
+              <div class="detail">
+                <div class="name">Osman TÜYSÜz</div>
+                <div class="job-title">Software Developer</div>
+                <div class="date">7 hour ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="fa-solid fa-ellipsis"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a>
+              <a href="#">#design</a>
+              <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/stevejobs.jpg" alt="">
+            </p>
+          </div>
+          <div class="post-alt-details">
+            <div class="likes">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 comment
+            </div>
+          </div>
+          <div class="post-actions">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+              <span>Like</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-comment"></i>
+              <span>Comment</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>Share</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send</span>
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/profilPhoto.jpg" alt="">
+            <div class="text-area">
+              <textarea cols="30" rows="10" placeholder="Write comment"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="fa-solid fa-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="./img/profilPhoto.jpg" alt="" />
+              <div class="detail">
+                <div class="name">Osman TÜYSÜz</div>
+                <div class="job-title">Software Developer</div>
+                <div class="date">7 hour ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="fa-solid fa-ellipsis"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a>
+              <a href="#">#design</a>
+              <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/stevejobs.jpg" alt="">
+            </p>
+          </div>
+          <div class="post-alt-details">
+            <div class="likes">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 comment
+            </div>
+          </div>
+          <div class="post-actions">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+              <span>Like</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-comment"></i>
+              <span>Comment</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>Share</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send</span>
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/profilPhoto.jpg" alt="">
+            <div class="text-area">
+              <textarea cols="30" rows="10" placeholder="Write comment"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="fa-solid fa-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <a href="#" class="post-author">
+              <img src="./img/profilPhoto.jpg" alt="" />
+              <div class="detail">
+                <div class="name">Osman TÜYSÜz</div>
+                <div class="job-title">Software Developer</div>
+                <div class="date">7 hour ago</div>
+              </div>
+            </a>
+            <a href="#" class="more">
+              <i class="fa-solid fa-ellipsis"></i>
+            </a>
+          </div>
+          <div class="post-content">
+            <p>
+              He said, Design is not just what it looks and feels like. Design is how it work
+            </p>
+            <p>
+              <a href="#">#stevejobs</a>
+              <a href="#">#design</a>
+              <a href="#">#apple</a>
+            </p>
+            <p>
+              <img src="img/stevejobs.jpg" alt="">
+            </p>
+          </div>
+          <div class="post-alt-details">
+            <div class="likes">
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-thumbs-up"></i>
+              172
+            </div>
+            <div class="comments">
+              10 comment
+            </div>
+          </div>
+          <div class="post-actions">
+            <a href="#">
+              <i class="fa-solid fa-heart"></i>
+              <span>Like</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-comment"></i>
+              <span>Comment</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-share-nodes"></i>
+              <span>Share</span>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send</span>
+            </a>
+          </div>
+          <div class="post-comment-form">
+            <img src="img/profilPhoto.jpg" alt="">
+            <div class="text-area">
+              <textarea cols="30" rows="10" placeholder="Write comment"></textarea>
+              <label>
+                <input type="file" accept="image/*">
+                <i class="fa-solid fa-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="widget widget-recommendation">
+          <h6>Add to Your Feeds</h6>
+          <ul>
+            <li>
+              <a href="#"><span class="image"><img src="./img/sekerbank.jpg" alt="" /></span>
+                <span class="detail">
+                  <div class="name">Şekerbank T.A.Ş.</div>
+                  <div class="alt-name">Corparate - Banking</div>
+                </span>
+              </a>
+              <a href="#"><i class="fa fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><span class="image"><img src="./img/yapikredi.jpg" alt="" /></span>
+                <span class="detail">
+                  <span class="name">Yapı Kredi</span>
+                  <span class="alt-name">Corparate - Banking</span>
+                </span>
+              </a>
+              <a href="#"><i class="fa fa-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><span class="image"><img src="./img/ingbank.jpg" alt="" /></span>
+                <span class="detail">
+                  <span class="name">ING</span>
+                  <span class="alt-name">Corparate - Banking</span>
+                </span>
+              </a>
+              <a href="#"><i class="fa fa-plus"></i></a>
+            </li>
+          </ul>
+          <a href="#" class="widget-button-genel">See All Recommendation</a>
+        </div>
+        <div class="widget widget-marketing">
+          <h6>
+            <div>Advertisement
+              <span class="description">Get the latest news and job vacancies</span>
+            </div>
+            <a href="#" class="more-button"><i class="fa-solid fa-ellipsis"></i></a>
+          </h6>
+          <div class="get-updates">
+            <div class="avatars">
+              <a href="#">
+                <img src="img/profilPhoto.jpg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/avatar2.jpg" alt="">
+              </a>
+            </div>
+            <p>Osman, Get update from <span>Interaction Design Foundations</span></p>
+          </div>
+          <a href="#" class="widget widget-button find-more">Visit Now</a>
+        </div>
+        <footer class="footer">
+          <nav>
+            <a href="#">About</a>
+            <a href="#">Help Center</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services</a>
+            <a href="#">Get the Linkedin App</a>
+            <a href="#">More</a>
+          </nav>
+          <div class="copyright">
+            <p>
+              Linkedin Corporation &copy 2023
+            </p>
+            <a href="#">Linked<i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <div class="message-box">
+    <div class="message-header">
+      <div class="img online">
+        <img src="img/profilPhoto.jpg" alt="">
+      </div>
+      Messaging
+      <div class="actions">
+        <a href="#" class="fa fa-pen-to-square"></a>
+        <a href="#" class="fa fa-ellipsis"></a>
+        <a href="#" class="fa fa-chevron-up"></a>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
