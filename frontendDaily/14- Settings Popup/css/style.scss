@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  &:focus {
+    outline: 0;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background: #f2f2f2;
+}
+
+.popup-open-btn {
+  border: 2px solid #f34b8c;
+  border-radius: 5px;
+  min-height: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #f34b8c;
+  padding: 0 40px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  .settings-popup {
+    padding: 85px 100px;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 912px;
+    width: 912px;
+    box-shadow: 0 67px 55px -34px rgba(#551a53, 0.1);
+    position: relative;
+
+    .close-popup {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 40px;
+      right: 40px;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.6;
+      }
+    }
+
+    h3 {
+      font-weight: 900;
+      font-size: 28px;
+      color: #874285;
+      margin-bottom: 55px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .item {
+          h5 {
+            font-size: 20px;
+            font-weight: 900;
+            color: #874285;
+            margin-bottom: 13px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 22px;
+            color: #242e4c;
+          }
+
+          select {
+            margin-top: 35px;
+            width: 330px;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid #d8dbe6;
+            padding: 0 20px;
+            font-size: 20px;
+            color: #242e4c;
+            cursor: pointer;
+            appearance: none;
+            appearance: none;
+            background-color: #ffffff;
+            background-image: url(../img/down.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 30px;
+
+            &:hover {
+              border-color: #9298ad;
+            }
+          }
+        }
+
+        .checkbox-input {
+          input {
+            display: none;
+            &:checked + .checkbox {
+              &::before {
+                background: #874285;
+                left: 33px;
+              }
+            }
+          }
+          .checkbox {
+            width: 66px;
+            display: block;
+            height: 37px;
+            border: 2px solid #d8dbe6;
+            border-radius: 37px;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              content: "";
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              background: #9298ad;
+              position: absolute;
+              top: 4px;
+              left: 4px;
+              transition: 300ms left ease-in-out,
+                300ms background-color ease-in-out;
+            }
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      margin-top: 55px;
+      a {
+        border: 2px solid #d8dbe6;
+        border-radius: 6px;
+        height: 54px;
+        width: 161px;
+        display: grid;
+        place-items: center;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #9298ad;
+
+        &:hover {
+          border-color: #9298ad;
+          color: darken($color: #9298ad, $amount: 20%);
+        }
+
+        &.active {
+          background-color: #f34b8c;
+          border-color: #f34b8c;
+          color: #fff;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    hr {
+      height: 1px;
+      background: #d8dbe6;
+      margin: 45px 0;
+    }
+  }
+}
+
+input[data-popup] {
+    display: none;
+    &:checked + .popup{
+        display: flex;
+    }
+}
