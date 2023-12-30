@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background: #f7f8fc;
+}
+
+.component--trial-box {
+  background: #fff;
+  box-shadow: 0 28px 30px -12px #e9ecf9;
+  padding: 30px 30px;
+  border-radius: 5px;
+  width: 566px;
+}
+.component--trial-box h3 {
+  font-weight: bold;
+  font-size: 22px;
+  color: #10182f;
+  margin-bottom: 25px;
+}
+.component--trial-box .credit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.component--trial-box .credit .circle-bar {
+  width: 72px;
+  height: 72px;
+  transform: rotate(-90deg);
+  margin-right: 20px;
+}
+.component--trial-box .credit .circle-bar svg circle {
+  stroke-width: 5;
+  fill: none;
+  stroke: #dae1f5;
+  stroke-dasharray: var(--circum);
+  stroke-dashoffset: var(--circum);
+  stroke-linecap: round;
+}
+.component--trial-box .credit .circle-bar svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+}
+.component--trial-box .credit .circle-bar svg circle:nth-child(2) {
+  stroke: #345ace;
+  animation: 3s animeteOffset;
+  animation-fill-mode: forwards;
+}
+.component--trial-box .credit div .amount {
+  font-size: 26px;
+  font-weight: bold;
+  color: #10182f;
+}
+.component--trial-box .credit div .text {
+  font-size: 16px;
+  color: #545d7a;
+}
+.component--trial-box p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #10182f;
+  margin-bottom: 40px;
+}
+.component--trial-box .action {
+  display: flex;
+}
+.component--trial-box .action a {
+  margin-right: 15px;
+  height: 43px;
+  border: 2px solid #dae1f5;
+  border-radius: 43px;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  color: #10182f;
+  align-items: center;
+  padding: 0 35px;
+  transition: 300ms all;
+}
+.component--trial-box .action a:hover {
+  border-color: #345ace;
+  color: #345ace;
+}
+.component--trial-box .action a.active {
+  color: #fff;
+  background: #10182f;
+  border-color: #10182f;
+}
+.component--trial-box .action a.active:hover {
+  border-color: #345ace;
+  background-color: #345ace;
+}
+
+@keyframes animeteOffset {
+  to {
+    stroke-dashoffset: var(--offset);
+  }
+}/*# sourceMappingURL=style.css.map */
