@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #f7f9fd;
+}
+
+.component--feedback {
+  background-color: #fff;
+  padding: 30px 25px;
+  box-shadow: 0 24px 27px -15px rgba(52, 87, 220, 0.13);
+  position: fixed;
+  transition: 300ms all;
+}
+.component--feedback.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.component--feedback.position-bc {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.component--feedback.position-bl {
+  bottom: 20px;
+  left: 50%;
+}
+.component--feedback.position-br {
+  top: 20px;
+  right: 50%;
+}
+.component--feedback.position-tc {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.component--feedback.position-tl {
+  top: 20px;
+  left: 50%;
+}
+.component--feedback.position-tr {
+  bottom: 20px;
+  right: 50%;
+}
+.component--feedback.position-c {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.component--feedback.style1 {
+  width: 380px;
+}
+.component--feedback .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.component--feedback .close-btn img {
+  width: 16px;
+  height: 16px;
+}
+.component--feedback h6 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #202842;
+  padding: 0 15px;
+  text-align: center;
+}
+.component--feedback .labels {
+  display: flex;
+  justify-content: space-between;
+}
+.component--feedback .labels input {
+  display: none;
+}
+.component--feedback .labels.label-icons li {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.component--feedback .labels.label-icons li img {
+  width: 40px;
+  height: 40px;
+}
+.component--feedback .labels.label-icons li.active {
+  background-color: #fff;
+  box-shadow: 0 5px 15px -5px rgba(148, 165, 228, 0.7);
+}
+.component--feedback .labels.label-numbers {
+  margin: 0 -4px;
+}
+.component--feedback .labels.label-numbers li {
+  margin: 0 4px;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #dcdff1;
+  font-size: 16px;
+  color: #202842;
+}
+.component--feedback .labels.label-numbers li.active {
+  background-color: #1a2b63;
+  border-color: #1a2b63;
+  color: #fff;
+  box-shadow: 0 5px 10px -5px rgba(26, 43, 99, 0.7);
+}
+.component--feedback .labels-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #5d698d;
+  margin-top: 10px;
+}
+.component--feedback .message {
+  height: 0;
+  overflow: hidden;
+  transition: 300ms height, 300ms padding-top;
+}
+.component--feedback .message p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #202842;
+  font-weight: bold;
+}
+.component--feedback .message textarea {
+  width: 100%;
+  border: 1px solid #dcdff1;
+  border-radius: 5px;
+  height: 70px;
+  resize: none;
+  padding: 10px;
+  font-size: 12px;
+  color: #202842;
+  overflow: auto;
+}
+.component--feedback .message textarea:focus {
+  border-color: #3457dc;
+  caret-color: #3457dc;
+}
+.component--feedback .message textarea::-moz-placeholder {
+  color: #5d698d;
+}
+.component--feedback .message textarea::placeholder {
+  color: #5d698d;
+}
+.component--feedback .message.active {
+  height: 122px;
+  padding-top: 25px;
+}
+.component--feedback .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.component--feedback .actions a {
+  font-size: 14px;
+  color: #5d698d;
+}
+.component--feedback .actions a:hover {
+  text-decoration: underline;
+}
+.component--feedback .actions button {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #3457dc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.component--feedback .actions button:hover {
+  background-color: #2d50bb;
+}/*# sourceMappingURL=style.css.map */
