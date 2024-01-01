@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cookie Banner</title>
+</head>
+
+<body>
+    <!-- div taglarına style1 veya style2 sınıflarını verebilirsiniz -->
+    <!-- div taglarına vertical sınıfını verebilirsiniz -->
+    <!-- div taglarına position -> tr, tl, tc, br, bl, bc sınıfını verebilirsiniz -->
+    <!-- div taglarında dark sınıfını kaldırırsanız açık görünümlü halini elde edersiniz. -->
+    <!-- div taglarında active sınıfını vererek banner'ı görünür hale getirebilirsiniz. -->
+    <div class="cookie-banner style1 dark active position-bc">
+        <p>We user third-party cookies to personelize content, ads, and analyze site traffic
+            <a href="#">Learn more</a>
+        </p>
+
+        <div class="actions">
+            <a href="#">Decline</a>
+            <a href="#" class="btn">Allow cookies</a>
+        </div>
+    </div>
+
+    <div class="cookie-banner style2">
+        <img src="img/cookie.png" alt="">
+        <p>We user third-party cookies to personelize content, ads, and analyze site traffic
+            <a href="#">Learn more</a>
+        </p>
+
+        <div class="actions">
+            <a href="#">Okay</a>
+        </div>
+    </div>
+
+    <div class="cookie-banner style2 vertical position-bc">
+        <img src="img/cookie.png" alt="">
+        <p>We user third-party cookies to personelize content, ads, and analyze site traffic
+            <a href="#">Learn more</a>
+        </p>
+
+        <div class="actions">
+            <a href="#">Okay</a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
