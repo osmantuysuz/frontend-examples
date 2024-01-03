@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap");
+:root {
+  --color: #006699;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #161e29;
+  padding: 50px;
+}
+
+.component--followers {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 30px;
+  width: 412px;
+  box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+.component--followers ul {
+  display: flex;
+  margin: 0 -10px;
+}
+.component--followers ul li {
+  flex: 1 1 auto;
+  margin: 0 10px;
+}
+.component--followers ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #161e29;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #c9cedf;
+}
+.component--followers ul li a i {
+  margin-right: 10px;
+}
+.component--user-info {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 30px;
+  width: 344px;
+  box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+.component--user-info ul li {
+  font-size: 16px;
+  color: #c9cedf;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.component--user-info ul li:last-child {
+  margin-bottom: 0;
+}
+.component--user-info ul li .icon {
+  text-align: center;
+  width: 30px;
+  margin-right: 10px;
+}
+.component--user-info ul li .sell {
+  color: #587dfb;
+}
+.component--team {
+  background: #1b2431;
+  border-radius: 10px;
+  padding: 40px 40px 50px;
+  width: 503px;
+  box-shadow: 0 10px 20px -20px #081323;
+  margin-bottom: 50px;
+}
+.component--team h5 {
+  font-size: 22px;
+  color: #c9cedf;
+  margin-bottom: 40px;
+}
+.component--team ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.component--team ul li:last-child {
+  margin-bottom: 0;
+}
+.component--team ul li .team {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #c9cedf;
+}
+.component--team ul li .team img {
+  margin-right: 14px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.component--team ul li .team-members {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.component--team ul li .team-members a {
+  margin-left: -10px;
+  position: relative;
+  z-index: 1;
+}
+.component--team ul li .team-members a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1b2431;
+  overflow: hidden;
+}
+.component--skills {
+  width: 434px;
+}
+.component--skills h5 {
+  font-size: 22px;
+  color: #c9cedf;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.component--skills ul {
+  display: flex;
+  margin: -5px;
+  flex-wrap: wrap;
+}
+.component--skills ul li {
+  margin: 5px;
+}
+.component--skills ul li a {
+  display: block;
+  padding: 15px 25px;
+  background-color: #1b2431;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #c9cedf;
+  box-shadow: 0 10px 20px -20px #081323;
+  transition: 300ms background-color linear;
+}
+.component--skills ul li a:hover {
+  background-color: #3f5473;
+}/*# sourceMappingURL=style.css.map */
