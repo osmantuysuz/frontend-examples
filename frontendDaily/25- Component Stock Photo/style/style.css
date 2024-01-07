@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: #f3f6fd;
+  padding: 30px;
+}
+
+.divider {
+  height: 50px;
+}
+
+.component.component1 {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  border-radius: 15px;
+  max-width: 950px;
+  background-color: #fff;
+}
+.component.component1 img {
+  width: 302px;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 40px;
+}
+.component.component1 .content-right {
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.component.component1 .content-right h3 {
+  font-size: 32px;
+}
+.component.component1 .content-right .author {
+  font-size: 18px;
+  color: #1a1b38;
+}
+.component.component1 .content-right .author a {
+  color: #5b60ed;
+  text-decoration: underline;
+}
+.component.component1 .content-right .actions {
+  display: flex;
+  margin: 0 -7px;
+}
+.component.component1 .content-right .actions a {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d4dbee;
+  border-radius: 3px;
+  margin: 0 7px;
+  justify-content: center;
+  font-size: 18px;
+  color: #585971;
+  padding: 0 30px;
+  white-space: nowrap;
+}
+.component.component1 .content-right .actions a i {
+  margin-right: 10px;
+  color: #585971;
+}
+.component.component1 .content-right .actions a:hover {
+  border-color: #5b60ed;
+  background-color: rgba(88, 89, 113, 0.1);
+}
+.component.component2 {
+  background-color: #fff;
+  padding: 50px 60px 60px 60px;
+  border-radius: 15px;
+  max-width: 390px;
+}
+.component.component2 h3 {
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+.component.component2 ul {
+  display: flex;
+  flex-direction: column;
+}
+.component.component2 ul li {
+  padding-bottom: 15px;
+}
+.component.component2 ul li.btn {
+  padding-top: 35px;
+}
+.component.component2 ul li button[type=submit] {
+  border-radius: 3px;
+  height: 63px;
+  background-color: #5b60ed;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.component.component2 ul li button[type=submit]:hover {
+  opacity: 0.9;
+}
+.component.component2 ul li:last-child {
+  margin-bottom: 0;
+}
+.component.component2 ul li .radio {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.component.component2 ul li .radio input {
+  display: none;
+}
+.component.component2 ul li .radio input:checked + .cb {
+  border-color: #5b60ed;
+}
+.component.component2 ul li .radio input:checked + .cb::before {
+  display: block;
+}
+.component.component2 ul li .radio .cb {
+  margin-right: 10px;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #d4dbee;
+  position: relative;
+}
+.component.component2 ul li .radio .cb::before {
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #5b60ed;
+  position: absolute;
+  display: none;
+}
+.component.component2 ul li .radio:hover .cb {
+  border-color: #5b60ed;
+}
+.component.component3 {
+  padding: 55px 60px 60px 65px;
+  border-radius: 15px;
+  background: #fff;
+  max-width: 510px;
+}
+.component.component3 h3 {
+  font-size: 24px;
+  padding-bottom: 25px;
+}
+.component.component3 .keywords {
+  display: flex;
+  flex-wrap: wrap;
+}
+.component.component3 .keywords a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 38px;
+  display: flex;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: 1px solid #d4dbee;
+  align-items: center;
+  font-size: 14px;
+  color: #585971;
+}
+.component.component3 .keywords a.view-all {
+  background-color: #f3f6fd;
+  border-color: #f3f6fd;
+  color: #5b60ed;
+}
+.component.component3 .keywords a.view-all i {
+  margin-left: 5px;
+}
+.component.component3 .keywords a:hover {
+  border-color: #5b60ed;
+  color: #5b60ed;
+}
+.component.component3 .stock-details {
+  display: flex;
+  padding-top: 50px;
+  margin-top: 40px;
+  border-top: 1px solid #d4dbee;
+}
+.component.component3 .stock-details li {
+  flex: 1;
+  font-size: 16px;
+  color: #585971;
+}
+.component.component3 .stock-details li label {
+  padding-bottom: 12px;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*
+<i class="fa-solid fa-download"></i>
+<i class="fa-solid fa-folder-plus"></i>
+<i class="fa-solid fa-angle-right"></i>
+*//*# sourceMappingURL=style.css.map */
