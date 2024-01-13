@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background-color: #f8f8f8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  &--login {
+    user-select: none;
+
+    width: 451px;
+    .login-card {
+      border-radius: 40px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 12px 24px 0 rgba($color: #495057, $alpha: 0.5);
+      margin-bottom: 36px;
+      header {
+        height: 112px;
+        color: darken($color: #f8f8f8, $amount: 30%);
+        background: rgba(#556ee6, 0.25) url(../img/header-background.jpg)
+          no-repeat;
+        padding: 24px;
+        h5 {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+      .login-content {
+        padding: 0 28px 24px;
+        background-color: #fff;
+        .avatar {
+          position: relative;
+          top: -24px;
+          margin-bottom: 8px;
+          img {
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            border: 3px solid #f8f8f8;
+          }
+        }
+
+        form {
+          ul {
+            li {
+              margin-bottom: 16px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              .title {
+                display: flex;
+                color: #495057;
+                font-size: 13px;
+                font-weight: 500;
+                margin-bottom: 8px;
+              }
+              input {
+                width: 100%;
+                height: 36px;
+                border-radius: 4px;
+                border: 1px solid #ced4da;
+                padding: 0 12px;
+                font-size: 13px;
+                &::placeholder {
+                  color: #495057;
+                }
+                &:focus {
+                  border-color: #495057;
+                  caret-color: #495057;
+                }
+              }
+
+              > .checkbox {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                input {
+                  display: none;
+                  &:checked + .checkbox {
+                    img {
+                      display: none;
+                    }
+                  }
+                }
+                .checkbox {
+                  width: 16px;
+                  height: 16px;
+                  border-radius: 4px;
+                  border: 1px solid #4db5bd;
+                  margin-right: 8px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  img {
+                    width: 14px;
+                  }
+                }
+                .text {
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: #495057;
+                }
+              }
+              button {
+                height: 36px;
+                border-radius: 24px;
+                color: #fff;
+                background-color: #495057;
+                cursor: pointer;
+                width: 100%;
+                font-size: 13px;
+                &:hover {
+                  background-color: darken($color: #495057, $amount: 50%);
+                }
+              }
+              .forgot-password {
+                display: flex;
+                align-items: center;
+                color: #495057;
+                font-size: 13px;
+                justify-content: center;
+                margin-top: 24px;
+                img {
+                  width: 12px;
+                  margin-right: 8px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .login-text {
+      p {
+        font-size: 13px;
+        color: #495057;
+        margin-bottom: 16px;
+        text-align: center;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          color: darken($color: #495057, $amount: 30%);
+          font-weight: 500;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

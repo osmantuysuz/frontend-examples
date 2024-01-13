@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component--login {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 451px;
+}
+.component--login .login-card {
+  border-radius: 40px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 24px 0 rgba(73, 80, 87, 0.5);
+  margin-bottom: 36px;
+}
+.component--login .login-card header {
+  height: 112px;
+  color: #acacac;
+  background: rgba(85, 110, 230, 0.25) url(../img/header-background.jpg) no-repeat;
+  padding: 24px;
+}
+.component--login .login-card header h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.component--login .login-card header p {
+  font-size: 13px;
+}
+.component--login .login-card .login-content {
+  padding: 0 28px 24px;
+  background-color: #fff;
+}
+.component--login .login-card .login-content .avatar {
+  position: relative;
+  top: -24px;
+  margin-bottom: 8px;
+}
+.component--login .login-card .login-content .avatar img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  border: 3px solid #f8f8f8;
+}
+.component--login .login-card .login-content form ul li {
+  margin-bottom: 16px;
+}
+.component--login .login-card .login-content form ul li:last-child {
+  margin-bottom: 0;
+}
+.component--login .login-card .login-content form ul li .title {
+  display: flex;
+  color: #495057;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.component--login .login-card .login-content form ul li input {
+  width: 100%;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 0 12px;
+  font-size: 13px;
+}
+.component--login .login-card .login-content form ul li input::-moz-placeholder {
+  color: #495057;
+}
+.component--login .login-card .login-content form ul li input::placeholder {
+  color: #495057;
+}
+.component--login .login-card .login-content form ul li input:focus {
+  border-color: #495057;
+  caret-color: #495057;
+}
+.component--login .login-card .login-content form ul li > .checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.component--login .login-card .login-content form ul li > .checkbox input {
+  display: none;
+}
+.component--login .login-card .login-content form ul li > .checkbox input:checked + .checkbox img {
+  display: none;
+}
+.component--login .login-card .login-content form ul li > .checkbox .checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #4db5bd;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component--login .login-card .login-content form ul li > .checkbox .checkbox img {
+  width: 14px;
+}
+.component--login .login-card .login-content form ul li > .checkbox .text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #495057;
+}
+.component--login .login-card .login-content form ul li button {
+  height: 36px;
+  border-radius: 24px;
+  color: #fff;
+  background-color: #495057;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+}
+.component--login .login-card .login-content form ul li button:hover {
+  background-color: black;
+}
+.component--login .login-card .login-content form ul li .forgot-password {
+  display: flex;
+  align-items: center;
+  color: #495057;
+  font-size: 13px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.component--login .login-card .login-content form ul li .forgot-password img {
+  width: 12px;
+  margin-right: 8px;
+}
+.component--login .login-text p {
+  font-size: 13px;
+  color: #495057;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.component--login .login-text p:last-child {
+  margin-bottom: 0;
+}
+.component--login .login-text p a {
+  color: #030404;
+  font-weight: 500;
+}
+.component--login .login-text p a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
