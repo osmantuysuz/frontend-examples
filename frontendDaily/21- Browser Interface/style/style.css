@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.browser {
+  height: 784px;
+  width: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.7), 0 20px 30px rgba(0, 0, 0, 0.3), 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.browser .bar {
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -0.5px 0 0 rgba(0, 0, 0, 0.05) inset, 0 0.5px 0 0 rgba(0, 0, 0, 0.15);
+  padding: 0 21px;
+}
+.browser .bar .bar-actions {
+  display: flex;
+  align-items: center;
+}
+.browser .bar .bar-actions .buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 11px;
+}
+.browser .bar .bar-actions .buttons span {
+  width: 12px;
+  height: 12px;
+  background: #ee6a5f;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 1px solid #ce5347;
+}
+.browser .bar .bar-actions .buttons span:nth-child(2) {
+  background: #f5bd4f;
+  border-color: #d6a243;
+}
+.browser .bar .bar-actions .buttons span:nth-child(3) {
+  background: #61c454;
+  border-color: #58a942;
+}
+.browser .bar .bar-actions > a {
+  width: 33px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+.browser .bar .bar-actions > a.margin-right {
+  margin-right: 9px;
+}
+.browser .bar .bar-actions > a.passive {
+  opacity: 0.5;
+}
+.browser .bar .bar-actions.with-space > a {
+  margin-left: 8px;
+}
+.browser .bar .bar-url {
+  display: flex;
+  align-items: center;
+}
+.browser .bar .bar-url > a {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+.browser .bar .bar-url .url {
+  width: 516px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #4c4c4c;
+  position: relative;
+}
+.browser .bar .bar-url .url i {
+  margin-right: 6px;
+}
+.browser .bar .bar-url .url .refresh-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.browser .iframe {
+  flex: 1;
+}
+.browser .iframe iframe {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
