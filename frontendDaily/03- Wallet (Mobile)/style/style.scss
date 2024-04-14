@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+$primary-color: #157aff;
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #1a212a;
+}
+
+.app {
+  height: 100%;
+  .app-inner {
+    height: calc(100% - 60px);
+    overflow: auto;
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 27px 24px;
+      align-items: center;
+
+      .balance {
+        .text {
+          font-size: 14px;
+          color: rgba($color: #fff, $alpha: 0.5);
+        }
+        .money {
+          font-size: 38px;
+          color: #fff;
+        }
+      }
+      .avatar {
+        img {
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          border: 2px solid $primary-color;
+          box-shadow: 0 6px 12px 0 rgba($color: $primary-color, $alpha: 0.5);
+        }
+      }
+    }
+
+    .actions {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      margin-bottom: 30px;
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 10px;
+          scroll-snap-align: start;
+
+          &:first-child {
+            padding-left: 24px;
+          }
+          &:last-child {
+            padding-right: 24px;
+          }
+          a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .icon {
+              width: 60px;
+              height: 60px;
+              min-width: 60px;
+              background-color: rgba($color: #535f6d, $alpha: 0.19);
+              border-radius: 24px;
+              display: flex;
+              @include center();
+
+              i {
+                font-size: 24px;
+                color: rgba($color: #fff, $alpha: 0.5);
+              }
+            }
+            .text {
+              color: #fff;
+              font-size: 14px;
+              margin-top: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .transaction {
+      padding: 14px 24px;
+      background-color: #1b242e;
+      border-radius: 48px 48px 0 0;
+
+      .transaction-list {
+        li {
+          margin-bottom: 17px;
+          padding-bottom: 17px;
+          border-bottom: 1px solid rgba($color: #e2e9ff, $alpha: 0.1);
+          &:last-child {
+            border: none;
+          }
+          a {
+            display: flex;
+            align-items: center;
+            .icon {
+              img {
+                width: 45px;
+                height: 45px;
+                @include center();
+                max-width: 45px;
+                max-height: 45px;
+                object-fit: cover;
+              }
+            }
+            .transaction {
+              display: flex;
+              flex-direction: column;
+              .title {
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+              }
+
+              .date {
+                color: rgba($color: #fff, $alpha: 0.5);
+                font-size: 14px;
+              }
+            }
+            .money {
+              margin-left: auto;
+              font-size: 18px;
+              font-weight: bold;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h6 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .buttons {
+      display: flex;
+      a {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        background-color: rgba($color: #535f6d, $alpha: 0.19);
+        border-radius: 15px;
+        display: flex;
+        @include center();
+        margin-left: 18px;
+
+        i {
+          font-size: 20px;
+          color: rgba($color: #fff, $alpha: 0.5);
+        }
+      }
+    }
+  }
+
+  .menu {
+    background: #12151a;
+    ul {
+      height: 60px;
+      display: flex;
+      li {
+        flex: 1;
+        a {
+          height: 60px;
+          @include center();
+          color: #fff;
+          font-size: 30px;
+          i {
+            color: rgba($color: #fff, $alpha: 0.5);
+          }
+        }
+        &.active a i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .page {
+    padding: 24px;
+    .card {
+      width: 307px;
+      height: 172px;
+      min-width: 307px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px 21px 16px 27px;
+
+      &.bg-dark {
+        background: linear-gradient(to right, #141414, #292929);
+      }
+
+      &.bg-blue {
+        background: linear-gradient(to right, #0c4acf, #495e70);
+      }
+
+      .bank-name {
+        color: #fff;
+        font-size: 16px;
+      }
+
+      img {
+        width: 40px;
+        align-self: baseline;
+      }
+
+      .card-info {
+        color: #fff;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        div {
+          font-size: 15px;
+          color: #fff;
+          align-items: center;
+          span {
+            margin-right: 5px;
+          }
+        }
+        img {
+          width: 75px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

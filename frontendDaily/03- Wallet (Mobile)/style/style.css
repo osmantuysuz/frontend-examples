@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #1a212a;
+}
+
+.app {
+  height: 100%;
+}
+.app .app-inner {
+  height: calc(100% - 60px);
+  overflow: auto;
+}
+.app .app-inner .app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 24px;
+  align-items: center;
+}
+.app .app-inner .app-header .balance .text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.app .app-inner .app-header .balance .money {
+  font-size: 38px;
+  color: #fff;
+}
+.app .app-inner .app-header .avatar img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: 2px solid #157aff;
+  box-shadow: 0 6px 12px 0 rgba(21, 122, 255, 0.5);
+}
+.app .app-inner .actions {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 30px;
+}
+.app .app-inner .actions ul {
+  display: flex;
+}
+.app .app-inner .actions ul li {
+  padding: 0 10px;
+  scroll-snap-align: start;
+}
+.app .app-inner .actions ul li:first-child {
+  padding-left: 24px;
+}
+.app .app-inner .actions ul li:last-child {
+  padding-right: 24px;
+}
+.app .app-inner .actions ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.app .app-inner .actions ul li a .icon {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background-color: rgba(83, 95, 109, 0.19);
+  border-radius: 24px;
+  display: flex;
+  display: grid;
+  place-items: center;
+}
+.app .app-inner .actions ul li a .icon i {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.app .app-inner .actions ul li a .text {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 13px;
+}
+.app .app-inner .transaction {
+  padding: 14px 24px;
+  background-color: #1b242e;
+  border-radius: 48px 48px 0 0;
+}
+.app .app-inner .transaction .transaction-list li {
+  margin-bottom: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(226, 233, 255, 0.1);
+}
+.app .app-inner .transaction .transaction-list li:last-child {
+  border: none;
+}
+.app .app-inner .transaction .transaction-list li a {
+  display: flex;
+  align-items: center;
+}
+.app .app-inner .transaction .transaction-list li a .icon img {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  max-width: 45px;
+  max-height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .app-inner .transaction .transaction-list li a .transaction {
+  display: flex;
+  flex-direction: column;
+}
+.app .app-inner .transaction .transaction-list li a .transaction .title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.app .app-inner .transaction .transaction-list li a .transaction .date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.app .app-inner .transaction .transaction-list li a .money {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.app h6 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app h6 .buttons {
+  display: flex;
+}
+.app h6 .buttons a {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background-color: rgba(83, 95, 109, 0.19);
+  border-radius: 15px;
+  display: flex;
+  display: grid;
+  place-items: center;
+  margin-left: 18px;
+}
+.app h6 .buttons a i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.app .menu {
+  background: #12151a;
+}
+.app .menu ul {
+  height: 60px;
+  display: flex;
+}
+.app .menu ul li {
+  flex: 1;
+}
+.app .menu ul li a {
+  height: 60px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 30px;
+}
+.app .menu ul li a i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.app .menu ul li.active a i {
+  color: #157aff;
+}
+.app .page {
+  padding: 24px;
+}
+.app .page .card {
+  width: 307px;
+  height: 172px;
+  min-width: 307px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 21px 16px 27px;
+}
+.app .page .card.bg-dark {
+  background: linear-gradient(to right, #141414, #292929);
+}
+.app .page .card.bg-blue {
+  background: linear-gradient(to right, #0c4acf, #495e70);
+}
+.app .page .card .bank-name {
+  color: #fff;
+  font-size: 16px;
+}
+.app .page .card img {
+  width: 40px;
+  align-self: baseline;
+}
+.app .page .card .card-info {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.app .page .card .card-info div {
+  font-size: 15px;
+  color: #fff;
+  align-items: center;
+}
+.app .page .card .card-info div span {
+  margin-right: 5px;
+}
+.app .page .card .card-info img {
+  width: 75px;
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */
