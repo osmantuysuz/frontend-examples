@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #e7eafb;
+  padding: 50px;
+}
+
+.component--job-item {
+  background: #fff;
+  box-shadow: 0 21px 87px -38px rgba(80, 98, 211, 0.5);
+  border-radius: 20px;
+  max-width: 610px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 40px;
+  margin-bottom: 5px;
+}
+.component--job-item .title a {
+  font-size: 25px;
+  color: #111127;
+  font-weight: bold;
+}
+.component--job-item .position {
+  font-size: 16px;
+  color: rgba(17, 17, 39, 0.7);
+  margin-bottom: 24px;
+}
+.component--job-item p {
+  font-size: 18px;
+  color: #111127;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+.component--job-item .tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.component--job-item .tags a {
+  padding: 7px 20px;
+  background: #e7eafb;
+  border-radius: 30px;
+  margin: 0 10px 10px 0;
+  font-size: 14px;
+  color: #111127;
+}
+.component--job-item .tags a:hover {
+  background: #c4cbf5;
+}
+.component--job-items {
+  display: flex;
+  flex-direction: column;
+}
+.component--job-items li {
+  margin-bottom: 15px;
+}
+.component--job-items li a {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 45px 20px 20px;
+  align-items: center;
+  transition: 300ms transform;
+}
+.component--job-items li a:hover {
+  transform: scale(1.02);
+}
+.component--job-items li a .avatar {
+  min-width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  border: 2px solid #e7eafb;
+  margin-right: 15px;
+  color: var(--color);
+}
+.component--job-items li a .detail {
+  display: flex;
+  flex-direction: column;
+}
+.component--job-items li a .detail .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111127;
+  margin-bottom: 9px;
+}
+.component--job-items li a .detail .position {
+  font-size: 16px;
+  color: rgba(17, 17, 39, 0.7);
+}
+.component--job-items li a .location {
+  opacity: 0.6;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #111127;
+}
+.component--job-items li a .location i {
+  margin-right: 5px;
+}/*# sourceMappingURL=style.css.map */

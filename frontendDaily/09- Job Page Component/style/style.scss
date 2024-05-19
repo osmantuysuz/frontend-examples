@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #e7eafb;
+  padding: 50px;
+}
+
+.component {
+  &--job-item {
+    background: #fff;
+    box-shadow: 0 21px 87px -38px rgba($color: #5062d3, $alpha: 0.5);
+    border-radius: 20px;
+    max-width: 610px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 40px;
+    margin-bottom: 5px;
+    .title {
+      a {
+        font-size: 25px;
+        color: #111127;
+        font-weight: bold;
+      }
+    }
+    .position {
+      font-size: 16px;
+      color: rgba($color: #111127, $alpha: 0.7);
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 18px;
+      color: #111127;
+      line-height: 26px;
+      margin-bottom: 25px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        padding: 7px 20px;
+        background: #e7eafb;
+        border-radius: 30px;
+        margin: 0 10px 10px 0;
+        font-size: 14px;
+        color: #111127;
+
+        &:hover {
+          background: darken($color: #e7eafb, $amount: 8%);
+        }
+      }
+    }
+  }
+
+  &--job-items {
+    display: flex;
+    flex-direction: column;
+    li {
+      margin-bottom: 15px;
+      a {
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px 45px 20px 20px;
+        align-items: center;
+        transition: 300ms transform;
+        &:hover {
+          transform: scale(1.02);
+        }
+        .avatar {
+          min-width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          font-size: 30px;
+          font-weight: bold;
+          display: grid;
+          place-items: center;
+          border: 2px solid #e7eafb;
+          margin-right: 15px;
+          color: var(--color);
+        }
+
+        .detail {
+          display: flex;
+          flex-direction: column;
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #111127;
+            margin-bottom: 9px;
+          }
+          .position {
+            font-size: 16px;
+            color: rgba($color: #111127, $alpha: 0.7);
+          }
+        }
+
+        .location {
+          opacity: 0.6;
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          color: #111127;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
