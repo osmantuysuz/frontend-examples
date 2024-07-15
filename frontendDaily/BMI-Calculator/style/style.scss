@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif !important;
+  padding: 0;
+}
+
+.row {
+  margin: 20px;
+}
+
+#bmi-box {
+  background-color: #424242;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+
+  #bmi-calculator {
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: "Passion One", sans-serif;
+      font-size: 48px;
+    }
+  }
+
+  #bmi-result {
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+    font-size: 24px;
+  }
+
+  #bmi-info {
+    text-align: center;
+    .row {
+      .col-md-3 {
+        padding-top: 20px;
+        &:nth-child(1) {
+          background-color: #2196f3;
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+        &:nth-child(2) {
+          background-color: #43a047;
+        }
+        &:nth-child(3) {
+          background-color: #fb8c00;
+        }
+        &:nth-child(4) {
+          background-color: #c62828;
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+    }
+  }
+}
