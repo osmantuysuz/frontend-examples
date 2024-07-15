@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+body {
+  background-color: #424242;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+.clock {
+  position: absolute;
+  width: 20%;
+
+  h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  .clock-container {
+    .clock-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 45px;
+      font-weight: bold;
+      column-gap: 10px;
+      margin-bottom: 10px;
+      font-family: "Orbitron", sans-serif;
+      #hour,
+      #minute,
+      #second {
+        width: 100px;
+        height: 60px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 10px;
+      }
+    }
+  }
+  #date {
+    display: block;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+  }
+}
